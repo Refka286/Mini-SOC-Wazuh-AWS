@@ -1,0 +1,6 @@
+*.pem
+*.ppk
+*.key
+*.env
+passwords.txt
+wazuh-passwords.txt
