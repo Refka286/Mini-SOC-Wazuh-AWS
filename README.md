@@ -70,10 +70,14 @@ Security Logs and Alerts
 Mini-SOC-Wazuh-AWS/
 │
 ├── README.md
+├── PROJET_PLAN.md
 ├── installation/
-│   └── 01-aws-ec2-setup.md
+│   ├── 01-aws-ec2-setup.md
+│   ├── 02-wazuh-installation.md
+│   └── 03-wazuh-dashboard.md
 ├── report/
-│   └── part1-aws-ec2-setup.md
+│   ├── part1-aws-ec2-setup.md
+│   └── part2-wazuh-installation.md
 ├── screenshots/
 └── .gitignore
 ```
@@ -205,14 +209,20 @@ This project demonstrates the following cybersecurity and cloud skills:
 
 ---
 
-## Next Step
+## Project Status
 
-The next step is to install Wazuh on the AWS EC2 instance using the official Wazuh installation script.
+Le projet est actuellement en cours de réalisation. La phase d’infrastructure EC2 est terminée, et la phase d’installation Wazuh est en cours.
 
-```bash
-curl -sO https://packages.wazuh.com/4.14/wazuh-install.sh
-sudo bash ./wazuh-install.sh -a
-```
+### Actions en cours
+- Installation de Wazuh sur l’instance EC2
+- Vérification des services Wazuh Manager, API et Dashboard
+- Tests de collecte de logs et d’alertes
+
+### Prochaines étapes
+1. Finaliser l’installation Wazuh
+2. Vérifier l’accès HTTPS au dashboard
+3. Documenter les tests de détection et les captures d’écran
+4. Mettre à jour le rapport final
 
 ---
 
